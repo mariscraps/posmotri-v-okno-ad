@@ -153,3 +153,33 @@ ol {
   width: 100%;
 }
 
+.search-form__fieldset-title {
+  font-size: 18px;
+  line-height: 100%;
+  font-weight: normal;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.content__card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.content__card-link:active {
+  background-color: #545050;
+}
+
+.content__video-card-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: uppercase;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 196px;
+}
