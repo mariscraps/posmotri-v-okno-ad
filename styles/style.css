@@ -183,3 +183,22 @@ ol {
   text-overflow: ellipsis;
   width: 196px;
 }
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.search-form__checkbox-list {
+  /* чекбоксы в линию */
+  display: flex;
+  gap:15px;
+  justify-content: center;
+}
+
+
