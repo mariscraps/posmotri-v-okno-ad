@@ -85,6 +85,15 @@ ol {
   grid-area: details;
 }
 
+.title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 94%;
+  text-transform: uppercase;
+  margin: 0 0 26px;
+}
+
 .search-form {
   display: flex;
   flex-direction: row;
@@ -270,4 +279,40 @@ ol {
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   display: block;
+}
+
+.button {
+  border: 1px solid currentColor;
+  color: #fff;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  background-color: transparent;
+  height: 34px;
+  cursor: pointer;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid white;
+  outline-offset: 2px;
+}
+
+.search-form__submit-button {
+  width: 194px;
+  align-self: flex-end;
+}
+
+.more-button {
+  width: 100%;
+  margin-top: 30px;
 }
