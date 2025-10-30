@@ -182,6 +182,25 @@ ol {
   background-color: #545050;
 }
 
+.content__card-link_current {
+  background-color: #545050;
+}
+
+.content__card-link:hover .content__video-card-title,
+.content__card-link:hover .content__video-card-description {
+  text-decoration: underline;
+}
+
+.content__card-link:focus {
+  outline: none;
+}
+
+.content__card-link:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: -1px;
+  background-color: transparent;
+}
+
 .content__video-card-title {
   font-family: 'Oswald', sans-serif;
   font-size: 30px;
