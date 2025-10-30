@@ -248,3 +248,26 @@ ol {
   width: 225px;
 }
 
+.search-form__pseudo-checkbox {
+  /* стилизация чекбокса */
+  position: relative;
+  width: 19px;
+  height: 19px;
+  border: 1px solid #fff;
+  display: inline-block;
+}
+
+.search-form__pseudo-checkbox::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  display: none;
+}
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+  display: block;
+}
