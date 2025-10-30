@@ -201,4 +201,50 @@ ol {
   justify-content: center;
 }
 
+.search-form__fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.search-form__label {
+  /* элементы фэйлдсет */
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  gap: 5px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
+.search-form__label:hover .search-form__label-text {
+  text-decoration: underline;
+}
+
+.search-form__label:has(.search-form__textfield:focus-visible) {
+  border: none;
+  outline: 1px solid #fff;
+}
+
+.search-form__textfield {
+  /* стилизация input[type="text"] */
+  appearance: none;
+  border: none;
+  outline: none;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 100%;
+  width: 225px;
+}
 
